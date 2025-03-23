@@ -1,0 +1,75 @@
+{
+  "name": "@diaazzawi/react-todo-list",
+  "version": "0.0.0-development",
+  "private": false,
+  "description": "A simple todo list component with Material UI, TailwindCSS, and Styled Components for React",
+  "keywords": [
+    "react",
+    "list",
+    "tailwindcss",
+    "material-ui",
+    "styled-components"
+  ],
+  "author": "Dia Azzawi <dia.azzawi@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaazzawi/react-todo-list.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/react-todo-list.umd.min.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "bugs": {
+    "url": "https://github.com/diaazzawi/react-todo-list/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc -b && vite build",
+    "format": "biome format",
+    "format:write": "biome format --write --unsafe",
+    "lint": "biome lint",
+    "lint:write": "biome lint --write --unsafe",
+    "check": "biome check",
+    "check:write": "biome check --write --unsafe",
+    "prepack": "yarn build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.3",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styled-engine-sc": "^6.4.3",
+    "@tailwindcss/vite": "^4.0.5",
+    "@types/node": "22.10.5",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.3",
+    "styled-components": "^6.1.15",
+    "tailwind-styled-components": "^2.2.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
+}
